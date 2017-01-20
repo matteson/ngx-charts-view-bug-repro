@@ -1,5 +1,7 @@
 # Repro
 
+Responsive view + prime tabs causes y axis of ngx line chart to not render. Minimal working example. Angular-cli boilerplate below.
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
 ## Development server
