@@ -4,15 +4,31 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ChartComponent } from './chart/chart.component';
+import { SettingsComponent } from './settings/settings.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
+import {
+  TabViewModule,
+  SharedModule,
+  ButtonModule } from 'primeng/primeng'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    ChartComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    NgxChartsModule,
+    SharedModule,
+    TabViewModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

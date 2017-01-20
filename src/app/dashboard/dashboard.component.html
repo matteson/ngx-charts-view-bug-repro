@@ -1,0 +1,13 @@
+<p-tabView>
+  <p-tabPanel>
+    My Dashboard
+    <app-chart
+    [data]="getData()"></app-chart>
+
+  </p-tabPanel>
+  <p-tabPanel>
+    My settings
+    <app-settings
+      (notifyChange)="onChange($event)"></app-settings>
+  </p-tabPanel>
+</p-tabView>
